@@ -5,6 +5,10 @@ uint16 detection_id                         # The ID of this detection generated
                                             # the radar does not generate IDs, this is intended as
                                             # a sequential identifier for each detection in a scan.
 
-geometry_msgs/Point position                # Only the x and y components are valid.
-geometry_msgs/Vector3 velocity              # range_rate rectangular transformation to x and y components
-float64 amplitude                           # The detection amplitude in dB.
+                                            # The z component of these fields is ignored for 2D tracking.
+geometry_msgs/Point position                # x, y, z coordinates of the centroid of the object being tracked.
+geometry_msgs/Vector3 velocity              # The velocity of the object in each spacial dimension.
+geometry_msgs/Vector3 acceleration          # The acceleration of the object in each spacial dimension.
+float64[4] covariance                       # The covariance in the z, y, z , and velocity dimensions.
+                                            # The covariance is average distance between the centroid of the object
+                                            # and each detected point. The covariance reflects the size of the object.
