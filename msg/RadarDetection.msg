@@ -12,6 +12,6 @@ uint16 tracking_id                          # The tracking ID of the object gene
 geometry_msgs/Point position                # x, y, z coordinates of the centroid of the object being tracked.
 geometry_msgs/Vector3 velocity              # The velocity of the object in each spacial dimension.
 geometry_msgs/Vector3 acceleration          # The acceleration of the object in each spacial dimension.
-float64[4] covariance                       # The covariance in the z, y, z , and velocity dimensions.
+float64[4] covariance                       # The covariance in the z, y, z, and velocity dimensions.
                                             # The covariance is average distance between the centroid of the object
                                             # and each detected point. The covariance reflects the size of the object.
