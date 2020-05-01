@@ -7,7 +7,7 @@ uint16 track_id                             # The track ID of the object generat
 geometry_msgs/Point position                # x, y, z coordinates of the centroid of the object being tracked.
 geometry_msgs/Vector3 velocity              # The velocity of the object in each spacial dimension.
 geometry_msgs/Vector3 acceleration          # The acceleration of the object in each spacial dimension.
-float32[4] size_variance                    # The average deviation (m) in the x, y, z, dimensions
+float32[3] size_variance                    # The average deviation (m) in the x, y, z, dimensions
                                             #   between the center of the object and the data points which it is derived from.
 float32 velocity_variance                   # The variance (m/s) in the doppler direction
                                             #   between the center of the object and the data points which it is derived from.
