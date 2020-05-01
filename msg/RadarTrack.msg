@@ -11,4 +11,4 @@ float32[3] size_variance                    # The average deviation (m) in the x
                                             #   between the center of the object and the data points which it is derived from.
 float32 velocity_variance                   # The variance (m/s) in the doppler direction
                                             #   between the center of the object and the data points which it is derived from.
-string[] classification                     # An optional classification of the object (eg. Person, Car).
+string classification                       # An optional classification of the object (eg. Person, Car).
