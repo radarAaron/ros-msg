@@ -1,3 +1,3 @@
 std_msgs/Header header
 
-radar_msgs/RadarPoints[] points
+radar_msgs/RadarPoint[] points
